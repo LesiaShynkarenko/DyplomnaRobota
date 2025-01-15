@@ -1,0 +1,361 @@
+// USER VARIABLES SECTION
+
+// body styles
+$accent: orange // Accent Color selected text - виділений текст
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+// Body variables
+$userfont: 'Roboto', sans-serif // User Font Family
+$fontsize: 16px // Body Font Size
+$lineheight: 130% // Document Line Height
+$textcolor: #333 // Text Color
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width  
+
+// IMPORT SECTION
+
+// Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' 
+// Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+// Optional Bootstrap Grid 
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' 
+// Optional Bootstrap Utilites
+@import 'node_modules/bootstrap/scss/utilities/_sizing.scss'
+// Bootstrap navmenu
+@import 'node_modules/bootstrap/scss/_nav.scss'
+@import 'node_modules/bootstrap/scss/_navbar.scss'
+@import 'node_modules/bootstrap/scss/_buttons.scss'
+@import 'node_modules/bootstrap/scss/_button-group.scss'
+@import 'node_modules/bootstrap/scss/_forms.scss'
+@import 'node_modules/bootstrap/scss/_dropdown.scss'
+@import 'node_modules/bootstrap/scss/_modal.scss'
+@import 'node_modules/bootstrap/scss/_utilities.scss'
+
+// slick carousel
+@import 'node_modules/slick-carousel/slick/slick.scss'
+@import 'node_modules/slick-carousel/slick/slick-theme.scss'
+
+// chart
+// @import 'node_modules/chart.js/dist/Chart.min.css' 
+
+// video.js
+// @import 'node_modules/video.js/src/css/vjs.scss'
+	
+// templates
+
+//  delete next section
+%chat-toggle
+	font-family: $userfont
+    font-style: normal
+    font-weight: normal
+	font-size: 0.775em
+	line-height: 1.210em
+
+%Web-H2 
+    font-family: $userfont
+    font-style: normal
+    font-weight: bold
+    font-size: 1.500em
+    line-height: 1.167em
+
+%Web-H3 
+    font-family: $userfont
+    font-style: normal
+    font-weight: 700
+    font-size: 2.000em
+    line-height: 1.156em
+
+%Web-H3-bold 
+    font-family: $userfont
+    font-style: normal
+    font-weight: 500
+    font-size: 0.875em // 14px
+    line-height: 1.143em
+
+%Web-H3-thin 
+    font-family: $userfont
+    font-style: normal
+    font-weight: 200
+    font-size: 0.875em
+    line-height: 1.143em
+
+%H3
+	font-family: $userfont
+	font-weight: 700
+	font-style: normal
+	font-size: 1em
+	line-height: 1.172em
+
+%Headline-H4
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 1.250em
+	line-height: 1.150em
+
+%Headline-H6
+	font-family: $userfont
+	font-style: normal
+	font-weight: 700
+	font-size: 0.875em // 14px
+	line-height: 1.172em
+
+
+// fix section
+%headline-h2
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 1.625rem // 26px
+	line-height: 1.875rem // 30px
+
+%headline-h4
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 1.250rem // 20px
+	line-height: 1.438rem // 23px
+	
+%headline-h5
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 1rem // 16px
+	line-height: 1.188rem // 19px
+	
+%headline-h6
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 0.875rem // 14px
+	line-height: 1rem // 16px
+
+%big-button
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 1rem // 16px
+	line-height: 1.188rem // 19px
+
+%title-of-topics
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 0.688rem // 11px
+	line-height: 0.813rem // 13px
+	letter-spacing: 1px
+	text-transform: uppercase
+
+%regular-text-1 
+    font-family: $userfont
+    font-style: normal
+    font-weight: normal
+    font-size: 0.875rem // 14px
+    line-height: 1.000rem // 16px
+
+
+%web-h1	
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 3.000rem // 48px
+	// line-height: 130% // 58px
+	line-height: 3.625rem // 58px
+	
+%web-h2
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 1.500rem // 24px
+	line-height: 1.750rem // 28px
+
+%web-h3
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+    font-size: 2.000rem // 32px
+    line-height: 2.313rem // 37px
+
+%web-h3-bold
+    font-family: $userfont
+    font-style: normal
+    font-weight: 500
+    font-size: 0.875rem // 14px
+    line-height: 1.000rem // 16px
+	
+%web-h3-thin
+    font-family: $userfont
+    font-style: normal
+    font-weight: 100
+    font-size: 0.875rem // 14px
+    line-height: 1.000rem // 16px
+
+%web-h4
+	font-family: $userfont
+	font-style: normal
+	font-weight: bold
+	font-size: 1rem // 16px
+	line-height: 1.188rem // 19px
+
+%web-body-1
+	font-family: $userfont
+    font-style: normal
+    font-weight: 300
+	font-size: 1rem // 16px
+	// line-height: 130% // 21px
+	line-height: 1.313rem // 21px
+	letter-spacing: 0.5px
+
+%web-body-2
+	font-family: $userfont
+    font-style: normal
+    font-weight: 300
+	font-size: 1rem // 16px
+	// line-height: 130% // 21px
+	line-height: 1.313rem //	21px
+
+%web-body-3
+	font-family: $userfont
+    font-style: normal
+    font-weight: 300
+    font-size: 0.875rem // 14px
+    line-height: 1.000rem // 16px
+
+%series-tabs
+	font-family: $userfont
+	font-weight: 500
+	font-size: 1.125rem // 18px
+	line-height: 1.500rem // 24px
+
+%extra-small-text
+	font-family: $userfont
+	font-style: normal
+	font-weight: normal
+	font-size: 0.563rem // 9
+	line-height: 0.688rem // 11
+
+%small-text
+	font-family: $userfont
+    font-style: normal
+    font-weight: normal
+	font-size: 0.688rem // 11px
+	line-height: 1.182rem // 13px
+
+%sub-title
+	font-family: $userfont
+    font-style: normal
+    font-weight: 300
+	font-size: 0.750rem // 12px
+	line-height: 0.875rem // 14px
+
+%create-ads-btn
+	font-family: $userfont
+    font-style: normal
+    font-weight: 700
+	font-size: 0.813rem // 13px
+	line-height: 0.938rem // 15px
+
+%episodes-description
+	font-family: $userfont
+    font-style: normal
+    font-weight: 300
+	font-size: 0.875rem // 14px
+	line-height: 1.125rem // 18px
+
+%modal-title
+	font-family: $userfont
+    font-style: normal
+    font-weight: 700
+	font-size: 1.375rem // 22px
+	line-height: 1.625rem // 26px
+
+%setting-money
+	font-family: $userfont
+    font-style: normal
+    font-weight: 700
+	font-size: 1.938rem // 31px
+	line-height: 2.25rem // 36px
+
+%setting-small-title
+	font-family: $userfont
+    font-style: normal
+    font-weight: 700
+	font-size: 1.125rem // 18px
+	line-height: 1.313rem // 21px
+
+%series-title
+	font-family: $userfont
+    font-style: normal
+    font-weight: 700
+	font-size: 1.625rem // 26px
+	line-height: 2.063rem // 33px
+
+%count
+	font-family: $userfont
+    font-style: normal
+    font-weight: 500
+	font-size: 0.938rem // 15px
+	line-height: 1.125rem // 18px
+	letter-spacing: 1px
+
+// gradient
+%dark-gradient
+    background-color: linear-gradient(135deg, #DC2424 0%, #4A569D 100%)
+
+%light-gradient 
+    background: linear-gradient(135deg, #BFE9FF 0%, #FF6E7F 100%)
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('truetype')
+
+@include font('Roboto', normal, 100, '../fonts/Roboto-Thin.ttf')
+@include font('Roboto', normal, 300, '../fonts/Roboto-Light.ttf')
+@include font('Roboto', normal, 400, '../fonts/Roboto-Regular.ttf')
+@include font('Roboto', normal, 500, '../fonts/Roboto-Medium.ttf')
+@include font('Roboto', normal, 700, '../fonts/Roboto-Bold.ttf')
+@include font('Roboto', normal, 900, '../fonts/Roboto-Black.ttf') // delete
+
+	
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: $light-grey
+	@extend %regular-text-1
+	padding-left: 1%
+
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 768px
+	position: relative
+	overflow-x: hidden
+	padding-left: $aside-width
+	padding-top: $headHeight
+	background-color: $dark-background-1
+	margin-top: 1px
+	margin-left: 1px
+
+::-webkit-scrollbar 
+	width: 0

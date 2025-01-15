@@ -1,0 +1,203 @@
+#uploadContent {
+    z-index: 1050;
+}
+
+.upload-content {
+    background-color: $modal-background;
+    border-radius: 10px;
+    height: 90vh;
+
+    &-header {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: none;
+        position: relative;
+        border-bottom: 1px solid $chatBorderColor;
+
+        &-title {
+            @extend %modal-title;
+            color: $white;
+            margin: 0;
+        }
+
+        &-sub-title {
+            @extend %headline-h6;
+            color: $grey-text;
+            margin-bottom: 1rem;
+        }
+
+        &-progress {
+            height: 1px;
+            background-color: $chatBorderColor;
+            width: 100%;
+        }
+
+        &-upload-progress {
+            @extend %web-body-3;
+            color: $light-grey;
+            margin-left: 2rem;
+        }
+
+        &-progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: $chatBorderColor;
+            &-bar {
+                height: 100%;
+                background-color: $light-pink;
+
+                &.progres-0 {
+                    width: 0;
+                }
+                &.progres-25 {
+                    width: 25%;
+                }
+            }
+        }
+
+        &-toggle-title {
+            @extend %setting-small-title;
+            color: $white;
+            margin: 0;
+        }
+    }
+
+    &-footer {
+        border: none;
+    }
+
+    &-body {
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: auto;
+
+        &-upload-item-video,
+        &-upload-item {
+            height: 80px;
+            // width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $chatBorderColor;
+            margin: 0 -16px;
+            padding: 0 16px;
+            background-color: $background;
+
+            &-cancel {
+                display: none;
+            }
+
+            &:hover &-cancel {
+                display: block;
+            }
+
+            &-progress {
+                @extend %headline-h6;
+                color: $light-pink;
+                margin: 0 0 0 1rem;
+            }
+        }
+
+        &-upload-item-video {
+            &-progress {
+                color: $white;
+            }
+        }
+
+        &-video-settings-section {
+            border: 1px solid $chatBorderColor;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &-type {
+        &-btn {
+            background-color: $dark-background-4;
+            margin: 1rem;
+            padding: 2rem;
+
+            &-desc {
+                @extend %headline-h4;
+                color: $white;
+                margin-top: 1.5rem;
+            }
+        }
+
+        &-title {
+            @extend %headline-h4;
+            color: $white;
+            margin: 1rem 0;
+            margin-left: 10.5rem;
+        }
+    }
+
+    &-music-item {
+        border-bottom: 1px solid $chatBorderColor;
+        background-color: $background;
+        .sound-time {
+            right: 0 !important;
+        }
+    }
+
+    &-add-episode {
+        margin-top: 2rem;
+        .studio-add-album-img-preview {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+            background-color: $modal-background;
+        }
+        .studio-add-album-img-svg {
+            width: 32px;
+        }
+        .studio-add-album-img-footer {
+            @extend %sub-title;
+            color: $grey-text;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+        .studio-add-album-custom-file {
+            height: auto;
+            margin: 0;
+        }
+        .studio-add-album-custom-file-control {
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+            @extend %headline-h6;
+            color: $light-pink;
+        }
+
+        .studio-add-album-img-footer {
+            display: none;
+        }
+
+        .form-group {
+            margin: 0;
+            display: none;
+        }
+
+        &:hover {
+            .studio-add-album-img-footer {
+                display: block;
+            }
+    
+            .form-group {
+                display: block;
+            }
+            .studio-add-album-img-preview {
+                border: 2px solid $light-pink;
+            }
+        }
+    }
+}

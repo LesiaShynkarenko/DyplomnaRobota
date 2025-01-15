@@ -1,0 +1,416 @@
+.settings {
+    background-color: $dark-background-4;
+    min-height: 90vh;
+    overflow: hidden;
+    &-aside {
+        height: 90vh;
+        border-right: 1px solid #4c4c4c;
+
+        &-item,
+        &-head {
+            display: flex;
+            min-height: 50px;
+            border-bottom: 1px solid #4c4c4c;
+            align-items: center;
+            padding: 0 1em;
+            @extend %Headline-H4;
+            font-weight: 700;
+            color: $white-to-dark-blue;
+
+            &-money {
+                padding-top: 0.7rem;
+                @extend %setting-money;
+                color: $light-pink;
+                &-svg {
+                    width: 21px;
+                }
+            }
+
+            .item-arrow {
+                display: block;
+            }
+            .item-arrow-pink {
+                display: none;
+            }
+
+            &.active {
+                background-color: #282828;
+                .item-arrow {
+                    display: none;
+                }
+                .item-arrow-pink {
+                    display: block;
+                }
+            }
+        }
+
+        &-item {
+            @extend %Headline-H6;
+        }
+    }
+
+    &-form {
+        width: 33.3%;
+        margin-top: 4em;
+        min-height: 90vh;
+    }
+
+    &-user-photo {
+        display: block;
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        &-img-wrapper {
+            position: relative;
+        }
+
+        &-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-input {
+            width: 100%;
+            opacity: 0;
+        }
+
+        &-control {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #000000;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+
+        &-svg {
+            width: 47px;
+        }
+
+        &-name {
+            @extend %title-of-topics;
+            color: $grey-text;
+            margin-top: 0.5rem;
+        }
+    }
+
+    &-user-name {
+        &-label {
+            @extend %title-of-topics;
+            color: $light-grey;
+        }
+        &-textarea,
+        &-input {
+            color: $white;
+            -moz-appearance: textfield;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                //   margin: 0;
+            }
+            &:focus {
+                background: rgba(255, 255, 255, 0.2);
+                color: $white;
+            }
+            &::placeholder {
+                @extend %regular-text-1;
+                color: $white;
+            }
+        }
+
+        &-textarea {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 7.5px;
+            @extend %regular-text-1;
+            padding: 1rem;
+        }
+    }
+
+    &-small-title {
+        @extend %setting-small-title;
+        color: $light-grey;
+    }
+
+    &-content-wrapper {
+        width: 90%;
+    }
+
+    &-promotional {
+        &-wrapper {
+            background-color: $dark-background-1;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        &-label {
+            width: 50%;
+        }
+        &-input {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: auto;
+            &:placeholder-shown {
+                text-align: center;
+            }
+        }
+
+        &-title {
+            @extend %title-of-topics;
+            color: $grey-text;
+            border-bottom: 1px solid $chatBorderColor;
+            padding: 0.5rem 1rem;
+            margin: 0;
+        }
+
+        &-checkbox {
+            margin-left: 2.6rem;
+            margin-top: 1rem;
+        }
+
+        &-price {
+            &-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.3rem 1.2rem;
+                padding-bottom: 1rem;
+            }
+
+            &-description {
+                display: block;
+                @extend %title-of-topics;
+                color: $grey-text;
+                margin: 0;
+            }
+        }
+        &-border {
+            border-bottom: 1px solid #4c4c4c;
+            margin: 0 0.7rem;
+        }
+    }
+}
+
+.creator {
+    &-balance {
+        &-aside-head {
+            display: block;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+        }
+
+        &-content {
+            &-bg-color {
+                background-color: $dark-background-1;
+                border-radius: 10px;
+            }
+
+            &-head {
+                &-h2 {
+                    @extend %web-h2;
+                    color: $white;
+                    margin-bottom: 2rem;
+                }
+                &-h4 {
+                    @extend %headline-h4;
+                    color: $white;
+                    margin-bottom: 2rem;
+                }
+
+                &-title-of-topics {
+                    @extend %title-of-topics;
+                    color: $light-grey;
+                }
+
+                &-regular-text {
+                    @extend %regular-text-1;
+                    color: $grey-text;
+                }
+            }
+
+            &-input {
+                &-wrapper {
+                    position: relative;
+                    margin-bottom: 3rem;
+                }
+
+                &-control {
+                    background-color: $dark-background-4;
+                    @extend %headline-h5;
+                    font-weight: 400;
+                    color: $grey-text;
+                    padding-left: 1.7rem;
+                    border-radius: 5px;
+                    border: 1px solid $big-button-background;
+                    -moz-appearance: textfield;
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        //   margin: 0;
+                    }
+                    &:focus {
+                        background-color: $dark-background-4;
+                        color: $grey-text;
+                    }
+                }
+
+                &-svg {
+                    position: absolute;
+                    left: 0.7rem;
+                    top: 0.5rem;
+                    width: 12px;
+                }
+            }
+
+            &-ul {
+                &-list {
+                    margin-top: 7rem;
+                    list-style-image: url("../images/dist/IconCollectionPigeebak/icon-small-button/checkmark-pink.svg");
+                }
+
+                &-item {
+                    @extend %web-body-1;
+                    color: $grey-text;
+                    margin: 1.5rem 0;
+                }
+            }
+
+            &-transaction {
+                &-wrapper {
+                    background-color: $dark-background-4;
+                }
+
+                &-item {
+                    min-height: 56px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid $chatBorderColor;
+                    &.fail {
+                        opacity: 0.3;
+                        background-color: $dark-backround-2;
+                    }
+                }
+
+                &-status,
+                &-flow {
+                    width: 55px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &-count {
+                    @extend %web-h4;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 3rem;
+                    width: 105px;
+                    &.t-p {
+                        color: $light-pink;
+                    }
+                    &.t-w {
+                        color: $white;
+                    }
+                }
+
+                &-description {
+                    @extend %web-body-2;
+                    color: $white;
+                }
+
+                &-time {
+                    &-wrapper {
+                        margin-left: auto;
+                        min-width: 70px;
+                    }
+                    &-date {
+                        @extend %sub-title;
+                        color: $light-grey;
+                        text-align: right;
+                    }
+                    &-time {
+                        @extend %sub-title;
+                        color: $grey-text;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    &-permission {
+        &-wrapper {
+            width: 80%;
+            margin: 4rem auto;
+        }
+        &-item {
+            background-color: $dark-background-1;
+            border-radius: 10px;
+            padding: 0.5rem;
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        &-select {
+            margin: 0 auto;
+            width: auto;
+            background-color: $dark-background-1;
+            border: none;
+            @extend %regular-text-1;
+            color: $white;
+            &:focus {
+                color: $white;
+                border: none;
+                background-color: $dark-background-1;
+            }
+            &-item {
+                width: 200%;
+            }
+        }
+
+        &-add-btn {
+            border: 1px solid $chatBorderColor;
+            @extend %web-body-1;
+            color: $white;
+            width: 100%;
+            border-radius: 10px;
+            text-align: left;
+            min-height: 56px;
+            margin-bottom: 2rem;
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &-users-aside {
+            border-left: 1px solid $chatBorderColor;
+            height: 100%;
+        }
+
+        &-input {
+            &-wrapper {
+                height: 45px;
+                width: auto;
+                margin: 1rem;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+.bt {
+border-top: 1px solid $chatBorderColor;
+}

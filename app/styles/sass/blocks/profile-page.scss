@@ -1,0 +1,363 @@
+#creator-profile,
+#profile-page {
+    background-color: $dark-background-1;
+    width: 100%;
+    /* user bio */
+    .user-info-header {
+        padding-top: 3em;
+
+        h3 {
+            @extend %web-h3;
+            font-size: 2rem; // 32px
+            line-height: 2.313rem; // 37px
+            color: $white-to-nero;
+        }
+
+        p {
+            @extend %web-body-3;
+            font-size: 0.875rem; // 14px
+            line-height: 1rem; // 16px
+            color: $white-to-nero;
+        }
+    }
+
+    .user-info-footer {
+        hr {
+            height: 0.1px;
+            border: 0.1px solid $hr-line-profile;
+        }
+
+        h3 {
+            font-size: 0.688em;
+            line-height: 0.813em;
+            font-weight: 500;
+            letter-spacing: 0.091em;
+            color: $grey-text;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+        }
+
+        @media screen and (max-width: 768px) {
+            h3 {
+                font-size: 0.5em;
+            }
+        }
+
+        h4 {
+            @extend %Headline-H4;
+            color: $light-grey;
+            margin-bottom: 0;
+        }
+    }
+
+    /* account info block */
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.3em 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 15%;
+            height: 70%;
+            border-right: 1px solid $hr-line-profile;
+        }
+
+        &:last-child::after {
+            border-right: none;
+        }
+    }
+
+    /* tabs */
+    .tab-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid $hr-line-profile;
+        cursor: pointer;
+        height: 2.3em;
+        padding-top: 0.3em;
+    }
+
+    .tab-block.active-tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid $toggleTextOn;
+    }
+
+    /* grid-content-all-posts  */
+    .grid-content-all-posts {
+        margin-top: 0.6em;
+
+        button {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+            }
+        }
+
+        .sound-post,
+        .movie-post,
+        .img-post {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .sound-post::after {
+            content: "";
+            position: absolute;
+            height: 1em;
+            width: 1em;
+            top: 0.5em;
+            right: 0.5em;
+            background-image: url(../images/dist/IconCollectionPigeebak/icon-small-button/songs.svg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .movie-post::after {
+            content: "";
+            position: absolute;
+            height: 1em;
+            width: 1.3em;
+            top: 0.3em;
+            right: 0.3em;
+            background-image: url(../images/dist/IconCollectionPigeebak/icon-small-button/movies-post-icon.svg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    // create post
+    .create-post {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-description,
+        &-movie,
+        &-type {
+            height: 75%;
+            width: 35%;
+            background: #242526;
+            border-radius: 10px;
+
+            overflow-x: hidden;
+        }
+
+        &-head {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 15%;
+            color: $white-to-dark-blue;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2em;
+            a {
+                color: $white-to-dark-blue;
+            }
+        }
+
+        &-content-wrapper {
+            border-bottom: 1px solid #4c4c4c;
+            border-top: 1px solid #4c4c4c;
+            padding: 0 2em;
+        }
+
+        &-content {
+            margin-top: 2em;
+        }
+
+        &-content-title {
+            @extend %regular-text-1;
+            color: $light-grey;
+            font-weight: 700;
+            text-align: center;
+            width: 38%;
+            margin: 1em auto;
+        }
+
+        &-content-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $dark-background-3;
+            padding: 0 1em;
+            height: 45px;
+            .text-color {
+                color: $white-to-dark-blue;
+            }
+        }
+
+        &-description {
+            .post-info {
+                border: none;
+            }
+
+            .grid-content-movie-posts {
+                border-bottom: 1px solid #4c4c4c;
+            }
+        }
+
+        &-description-info {
+            padding: 0 1em;
+            height: 25%;
+            &-title {
+                @extend %Headline-H4;
+                font-weight: 700;
+                color: $white-to-dark-blue;
+                margin: 1em 0;
+            }
+
+            &-description {
+                @extend %Web-H3-bold;
+                font-weight: 300;
+                color: $light-grey;
+            }
+        }
+
+        .publish {
+            color: $pink;
+        }
+        .arrow-back {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+/* user photo */
+.img-profile-style {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* grid-content-movie-posts */
+.grid-content-movie-posts {
+    .movie-post {
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+
+        img {
+            max-width: 173px;
+            max-height: 100px;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .post-info {
+        width: 100%;
+        height: 107%;
+        border-bottom: 1px solid $dark-to-d-blueh;
+        position: relative;
+        padding: 2em 0 1em 1em;
+        margin-left: 1em;
+
+        .sound-arrow,
+        .sound-arrow-pink {
+            position: absolute;
+            height: 0.9em;
+            width: 0.5em;
+            top: 2.5em;
+            right: 2em;
+        }
+
+        h6 {
+            font-size: 1.125em;
+            font-weight: 700;
+            color: $white-to-dark-blue;
+            line-height: 1.172em;
+            letter-spacing: 0.028em;
+            text-align: left;
+        }
+
+        p {
+            font-size: 0.875em;
+            font-weight: 300;
+            line-height: 1.172em;
+            letter-spacing: 0.018em;
+            color: #828282;
+            text-align: left;
+        }
+    }
+}
+
+/*  grid-content-music-posts */
+.grid-content-music-posts {
+    .music-post {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+
+        img {
+            max-width: 50px;
+            max-height: 50px;
+            height: 100%;
+            width: 100%;
+            margin: 0.5em;
+        }
+    }
+
+    .post-info {
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid $dark-to-d-blueh;
+        position: relative;
+        padding-top: 0.8em;
+
+        .sound-arrow,
+        .sound-arrow-pink {
+            position: absolute;
+            height: 0.9em;
+            width: 0.5em;
+            top: 0.8em;
+            right: 2em;
+        }
+
+        h6 {
+            font-size: 1em;
+            font-weight: 700;
+            color: $white-to-dark-blue;
+            line-height: 1.172em;
+            text-align: left;
+        }
+
+        p,
+        .sound-time {
+            font-size: 0.875em;
+            font-weight: 300;
+            line-height: 1.172em;
+            color: #828282;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .sound-time {
+            position: absolute;
+            right: 6em;
+            top: 1.65em;
+        }
+    }
+}
+
+#create-post {
+    background-color: $big-button-background;
+    width: 100%;
+    color: $pink;
+    padding: 0.6em 0;
+    @extend %H3;
+}

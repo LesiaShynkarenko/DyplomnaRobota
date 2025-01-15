@@ -1,0 +1,297 @@
+#creator-head,
+#head {
+  background-color: $dark-background-3;
+  height: $headHeight;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  border-bottom: 1px solid $aside-head-border;
+
+  // info sizez
+  // input 20%
+  // toggle 50%
+  // account 20%
+
+  // logo styles
+  .logo-svg {
+    width: 155px; // logo size
+    padding-right: 15px;
+    height: 100%;
+    border-right: 1px solid $aside-head-border;
+  }
+
+
+
+  // account styles
+  .account {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .account-photo {
+      border-radius: 50%;
+    }
+
+    .account-name {
+      @extend %regular-text-1;
+      color: $white-to-nero;
+      margin-bottom: 0;
+      margin-left: 3%;
+    }
+
+    .arrow-btn {
+      border: 0;
+      background: none;
+      margin-left: 3%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .arrow-svg {
+      width: 20px;
+      height: 15px;
+      transform: rotate(90deg);
+    }
+
+    .custom-dropdown-menu {
+      position: absolute;
+      right: 20%;
+      top: 157%;
+      width: 130%;
+      background-color: $input-background;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0 0 5% 5%;
+    }
+
+    .dropdown-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      width: 100%;
+      padding: 0 0.9em;
+      border-bottom: 1px solid $light-grey;
+      @extend %headline-h6;
+      color: $white-to-grey;
+      overflow: hidden;
+
+      &:hover {
+        background-color: $input-background;
+      }
+
+      .settings-img {
+        margin-right: 5%;
+      }
+
+      .add-account,
+      .account-img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin-right: 5%;
+      }
+
+      &.active {
+        color: $pink;
+        background-color: $input-background;
+
+        .add-account,
+        .account-img {
+          filter: drop-shadow(0px 0px 8px #ff70c8);
+        }
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .another_account {
+      &-arrow {
+        display: block;
+        width: 8px;
+        height: 14px;
+        position: absolute;
+        right: 5%;
+        top: 40%;
+        cursor: pointer;
+      }
+    }
+
+    .sub-title {
+      @extend %regular-text-1;
+      color: $white-to-nero;
+      padding: 0 0.9em;
+      margin: 1em 0;
+    }
+  }
+}
+
+#creator-head {
+  .creator-head {
+    &-create-btn {
+      @extend %headline-h6;
+      color: $white;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .custom-dropdown-menu {
+    background-color: $background;
+  }
+}
+
+  // input styles
+  .input-block {
+    width: 25%; // input size
+    height: 45%;
+    min-height: 35px;
+    position: relative;
+    margin-left: 1%;
+
+    &:focus-within {
+      .search-filter {
+        display: block;
+      }
+    }
+
+    .search-svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 2%;
+      top: 20%;
+      z-index: 21;
+    }
+
+    .header-input {
+      background-color: $input-background;
+      border: none;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    input[type="text"] {
+      padding-left: 10%;
+      color: $light-grey;
+      @extend %regular-text-1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+    }
+
+    @media screen and (max-width: 992px) {
+      input[type="text"] {
+        padding-left: 15%;
+      }
+    }
+  }
+
+    // toogle styles
+    .toggle-btn {
+      width: 50%; // toggle size
+      height: 70%;
+      // background-color: black;
+      position: relative;
+  
+      // codepen
+      .toggleWrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        padding: 0 200px;
+        transform: translate3d(-50%, -50%, 0);
+  
+        input {
+          position: absolute;
+          left: -99em;
+        }
+      }
+      .influencers-toggle,
+      .toggle {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        width: 150%;
+        height: 15px;
+        margin-top: 25%;
+        background: $toggleBG;
+        border-radius: 9px;
+  
+        &::before {
+          content: "music";
+          position: absolute;
+          left: -150%;
+          top: -20%;
+          @extend %headline-h6;
+          font-weight: $toggleFontWeightOn;
+          line-height: 1.5em;
+          color: $toggleTextOn;
+          letter-spacing: 0.15px;
+        }
+  
+        &::after {
+          content: "movie";
+          position: absolute;
+          right: -150%;
+          top: -20%;
+          @extend %headline-h6;
+          font-weight: $toggleFontWeightOff;
+          line-height: 1.5em;
+          color: $toggleTextOff;
+          letter-spacing: 0.15px;
+        }
+      }
+  
+      .toggle__handler {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: -25%;
+        left: -5%;
+        width: 22px;
+        height: 22px;
+        border-radius: 50px;
+        background-color: $toggleTextOn;
+        box-shadow: 0px 1px 4px rgba(234, 0, 145, 0.2);
+        // transition: all 400ms linear;
+        transform: rotate(-45deg);
+      }
+  
+      input:checked {
+        + .toggle {
+          &:before {
+            color: $toggleTextOff;
+            font-weight: $toggleFontWeightOff;
+          }
+  
+          &:after {
+            color: $toggleTextOn;
+            font-weight: $toggleFontWeightOn;
+          }
+  
+          .toggle__handler {
+            //   background-color: #FFE5B5;
+            transform: translate3d(75%, 0, 0) rotate(0);
+  
+            .crater {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }

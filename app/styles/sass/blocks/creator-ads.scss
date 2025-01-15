@@ -1,0 +1,395 @@
+#creator-ads {
+    .creator-ads {
+        &-head {
+            height: 36px;
+            &-title {
+                @extend %headline-h4;
+                color: $white;
+            }
+        }
+
+        &-info {
+            border-left: 1px solid $chatBorderColor;
+        }
+
+        &-modal {
+            overflow: hidden;
+            &-dialog {
+                height: 95vh;
+                width: 60vw;
+                margin-top: 1rem;
+                max-width: 100vw;
+                position: relative;
+            }
+
+            &-content {
+                background-color: $modal-background;
+            }
+
+            &-head {
+                height: 72px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: none;
+            }
+
+            &-footer {
+                background: linear-gradient(180deg, rgba(36, 37, 38, 0) 0%, #242526 100%);
+                height: 15%;
+                border: none;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &-influencers-count {
+                    @extend %count;
+                    color: $grey-text;
+                }
+
+                &-pigeebacs {
+                    @extend %setting-money;
+                    color: $white;
+                    .pigeebacs-svg {
+                        width: 20px;
+                    }
+                }
+            }
+
+            &-progres {
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: $chatBorderColor;
+
+                &-bar {
+                    height: 100%;
+                    width: 100%;
+                    background-color: $pink;
+                }
+            }
+
+            &-user-item {
+                margin-right: 3rem;
+                margin-bottom: 2rem;
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
+                &.selected {
+                    .creator-ads-modal-user-item-img {
+                        border: 2px solid $light-pink;
+                    }
+                    .creator-ads-modal-user-item-name {
+                        color: $light-pink;
+                    }
+                }
+                &-img {
+                    width: 38px;
+                    border-radius: 50%;
+                    &-wrapper {
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    &-checked {
+                        position: absolute;
+                        width: 13px;
+                        right: 25%;
+                        bottom: 0;
+                    }
+                }
+                &-name {
+                    @extend %sub-title;
+                    color: $white;
+                    text-align: center;
+                }
+            }
+
+            &-body-9,
+            &-body-8,
+            &-body-7,
+            &-body-6,
+            &-body-5,
+            &-body-4,
+            &-body-3,
+            &-body-2,
+            &-body-1,
+            &-body {
+                padding: 0;
+                overflow-y: auto;
+                &-title {
+                    @extend %headline-h4;
+                    color: $white;
+                    margin: 15% 0 2rem 0;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                &-desc {
+                    @extend %web-body-1;
+                    color: $light-grey;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                &-add-btn {
+                    background-color: $dark-background-4;
+                    @extend %regular-text-1;
+                    color: $white;
+                    text-align: left;
+                    padding: 1rem;
+                    border-radius: 10px;
+                }
+
+                &-wrapper {
+                    .grid-content {
+                        overflow-y: auto;
+                        height: inherit;
+                    }
+                }
+
+                &-img {
+                    display: block;
+                    height: 276px;
+                    border-radius: 21px;
+                }
+
+                &-block-1 {
+                    height: 250px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $dark-background-4;
+                    border-radius: 10px;
+                    padding: 0;
+                    margin-right: 15px;
+
+                    &-desc {
+                        @extend %headline-h4;
+                        color: $white;
+                        text-align: center;
+                        margin: 1rem 0;
+                    }
+                }
+
+                &-influencers-statistics-item {
+                    min-width: 335px;
+                    width: 100%;
+                    margin-bottom: 3rem;
+
+                    &-head {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 2rem;
+
+                        .influencers-photo {
+                            width: 38px;
+                            border-radius: 50%;
+                            margin-right: 0.5rem;
+                        }
+
+                        .influencers-name {
+                            @extend %regular-text-1;
+                            color: $white;
+                        }
+                    }
+
+                    &-info {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin-bottom: 2rem;
+
+                        &-item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            &-title {
+                                @extend %title-of-topics;
+                                color: $grey-text;
+                                text-transform: uppercase;
+                            }
+
+                            &-count {
+                                @extend %big-button;
+                                color: $white;
+                            }
+
+                            &-pigeebacs {
+                                display: inline-block;
+                                width: 10px;
+                                margin-right: 0.3rem;
+                            }
+                        }
+                    }
+
+                    &-details {
+                        &-item {
+                            @extend %regular-text-1;
+                            color: $white;
+                            border-bottom: 1px solid $chatBorderColor;
+                            display: flex;
+                            padding: 1rem 0;
+                            margin: 0 1.5rem;
+                        }
+
+                        &-count {
+                            @extend %big-button;
+                            color: $grey-text;
+                            margin-left: auto;
+                            .pigeebacs-svg {
+                                display: inline-block;
+                                width: 10px;
+                                margin-right: .3rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-body-9 {
+                .creator-ads-modal-body-title {
+                    @extend %web-h2;
+                }
+            }
+
+            &-title {
+                @extend %modal-title;
+                color: $white;
+                margin: 0 2rem;
+            }
+        }
+    }
+
+    .create-ads {
+        width: 40%;
+        @extend %create-ads-btn;
+    }
+
+    .chat-list.ads {
+        .chat-toggle {
+            .lab-3 {
+                left: 45% !important;
+            }
+        }
+    }
+
+    .chat-user-info {
+        padding: 0;
+        &-wrapper {
+            border-bottom: 1px solid $chatBorderColor;
+        }
+
+        &-title {
+            @extend %headline-h5;
+            color: $white;
+            text-align: center;
+            margin: 0.5rem 0;
+        }
+
+        &-block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-l {
+                display: block;
+                margin-left: 3rem;
+            }
+
+            &-head {
+                @extend %title-of-topics;
+                color: $grey-text;
+                text-transform: uppercase;
+            }
+
+            &-count {
+                @extend %big-button;
+                color: $light-grey;
+                text-transform: uppercase;
+            }
+        }
+
+        &-border {
+            border-left: 1px solid $chatBorderColor;
+        }
+    }
+}
+
+.upload-content-page-3 {
+    .upload-content-body {
+        .toggle-btn {
+            height: auto;
+            min-height: 35px;
+            width: auto;
+            min-width: 170px;
+            .toggleWrapper {
+                padding-left: 70px;
+                padding-right: 70px;
+            }
+        }
+
+        .toggle {
+            &::before {
+                content: "all";
+                left: -30px;
+            }
+            &::after {
+                content: "active";
+            }
+        }
+    }
+}
+
+.info-btn {
+    border: 2px solid $grey-text;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -2rem;
+    z-index: 5;
+    &-svg {
+        width: 9px;
+    }
+}
+
+.progres-0 {
+    width: 0%;
+}
+.progres-1 {
+    width: 16.6%;
+}
+.progres-2 {
+    width: 33.2%;
+}
+.progres-3 {
+    width: 49.8%;
+}
+.progres-4 {
+    width: 66.4%;
+}
+.progres-5 {
+    width: 83%;
+}
+.progres-6 {
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+.slider-view-all-btn {
+    @extend %headline-h5;
+    color: $light-pink;
+    text-decoration: underline;
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.music-nickname {
+    padding-top: .1rem;
+}

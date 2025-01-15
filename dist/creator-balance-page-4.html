@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/favicon.png">
+	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet" />
+</head>
+
+<body id="body" theme="dark">
+
+<header>
+    <div id="creator-head" class="container-fluid">
+    <div class="row h-100">
+        <div class="col-12 d-flex align-items-center">
+            <!-- logo -->
+            <img class="logo-svg dark-theme-icon" src="images/dist/IconCollectionPigeebak/pigeebak logo.svg" alt="">
+            <img class="logo-svg white-theme-icon d-none" src="images/dist/IconCollectionPigeebak/pigeebak_logo_pink.svg" alt="">
+            <!-- create btn -->
+            <a name="uploadBtn" id="uploadBtn" class="btn ml-auto creator-head-create-btn" role="button" href="#"  data-toggle="modal" data-target="#uploadContent">
+                <img class="mr-2" src="images/dist/IconCollectionPigeebak/icon-small-button/plus.svg" alt="">
+                Create
+            </a>
+            <!-- Modal -->
+             <div class="modal fade" id="uploadContent" tabindex="-1" role="dialog" aria-labelledby="uploadContent"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <!-- page-1 -->
+        <div class="modal-content upload-content upload-content-page-1 d-none">
+            <div class="modal-header upload-content-header">
+                <h5 class="upload-content-header-title">Upload content</h5>
+                <button type="button" class="close btn m-0 p-0 mr-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="images/dist/IconCollectionPigeebak/Icon/close.svg" alt=""></span>
+                </button>
+            </div>
+            <div class="upload-content-header-progress">
+                <div class="upload-content-header-progress-bar"></div>
+            </div>
+            <div class="modal-body upload-content-body">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+                        <div class="col-8 offset-2">
+                            <h2 class="creator-ads-modal-body-title">Choose content type</h2>
+                        </div>
+                        <div class="col-8 offset-2 mb-3 creator-ads-modal-body-wrapper">
+                            <div class="d-flex">
+                                <button class="col-6 btn creator-ads-modal-body-block-1"><img
+                                        src="images/dist/promote-movie.png" alt="">
+                                    <h3 class="creator-ads-modal-body-block-1-desc">Upload movie</h3>
+                                </button>
+                                <button class="col-6 btn creator-ads-modal-body-block-1"><img
+                                        src="images/dist/promote-song.png" alt="">
+                                    <h3 class="creator-ads-modal-body-block-1-desc">Upload series</h3>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-8 offset-4 creator-ads-modal-body-wrapper">
+                            <div class="d-flex">
+                                <button class="col-6 btn creator-ads-modal-body-block-1"><img
+                                        src="images/dist/promote-song-2.png" alt="">
+                                    <h3 class="creator-ads-modal-body-block-1-desc">Upload song</h3>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer upload-content-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+        </div>
+        <!-- page-2 -->
+        <div class="modal-content upload-content upload-content-page-2 ">
+            <div class="modal-header upload-content-header">
+                <h5 class="upload-content-header-title">Upload content</h5>
+                <button type="button" class="close btn m-0 p-0 mr-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="images/dist/IconCollectionPigeebak/Icon/close.svg" alt=""></span>
+                </button>
+            </div>
+            <div class="upload-content-header-progress">
+                <div class="upload-content-header-progress-bar"></div>
+            </div>
+            <div class="modal-body upload-content-body">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+                        <div class="col-8 offset-2">
+                            <h2 class="creator-ads-modal-body-title">Choose content type</h2>
+                            <div class="d-flex">
+                                <div class="w-25"><a class="big-btn h-auto upload-content-type-btn-desc bg-blue"
+                                        href="">Liked sounds</a></div>
+                                <div class="w-25"><a class="big-btn h-auto upload-content-type-btn-desc bg-pink"
+                                        href="">Top
+                                        rated songs 2020</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer upload-content-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- account -->
+            <div class="account">
+                <img class="account-photo" src="images/dist/account_photo.png" alt="">
+                <h3 class="account-name d-none d-md-block">account_name</h3>
+                <button class="arrow-btn custom-dropdown-menu-btn">
+                    <img class="arrow-svg dark-theme-icon" src="images/dist/IconCollectionPigeebak/Icon/arrow.svg" alt="">
+                    <img class="arrow-svg white-theme-icon d-none" src="images/dist/IconCollectionPigeebak/Icon/arrow-black.svg"
+                        alt="">
+
+                </button>
+                <div class="custom-dropdown-menu d-none">
+                    <a class="dropdown-item" href="creator-settings-page-1.html">
+                        <img class="settings-img dark-theme-icon"
+                            src="images/dist/IconCollectionPigeebak/icon-small-button/settings.svg" alt="">
+                        <img class="settings-img white-theme-icon d-none"
+                            src="images/dist/IconCollectionPigeebak/icon-small-button/settings-grey.svg" alt="">
+                        <span class="d-none d-md-block">Settings</span>
+                    </a>
+                    <a class="dropdown-item" href="creator-balance-page-1.html">
+                        <img class="settings-img dark-theme-icon"
+                            src="images/dist/IconCollectionPigeebak/icon-small-button/transactions.svg" alt="">
+                        <img class="settings-img white-theme-icon d-none"
+                            src="images/dist/IconCollectionPigeebak/icon-small-button/transactions.svg" alt="">
+                        <span class="d-none d-md-block">Pigeebucks balance</span>
+                    </a>
+                    <h6 class="sub-title">Change account</h6>
+                    <a class="dropdown-item " href="home-page.html">
+                        <img class="account-img" src="images/dist/account_photo.png" alt="">
+                        <span class="d-none d-md-block">account_name</span>
+                    </a>
+                    <a class="dropdown-item another_account active" href="creator-studio-page.html">
+                        <img class="account-img" src="images/dist/company_account_name.png" alt="">
+                        <span class="d-none d-md-block">company_account_name</span>
+                        <img class="another_account-arrow dark-theme-icon" src="images/dist/IconCollectionPigeebak/Icon/arrow.svg"
+                            alt="">
+                        <img class="another_account-arrow white-theme-icon d-none"
+                            src="images/dist/IconCollectionPigeebak/Icon/arrow-black.svg" alt="">
+                    </a>
+                    <a class="dropdown-item" href="login-page.html">
+                        <img class="add-account dark-theme-icon" src="images/dist/IconCollectionPigeebak/icon-small-button/plus.svg"
+                            alt="">
+                        <img class="add-account white-theme-icon d-none"
+                            src="images/dist/IconCollectionPigeebak/icon-small-button/plus-gray.svg" alt="">
+                        <span class="d-none d-md-block">add account</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<aside>
+   <div id="aside-creator" class="containder-fluid">
+    <div class="row">
+        <div class="col-12">
+            <nav>
+                <div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="creator-studio-page.html">
+                                <svg class="mr-2 aside-svg" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.5956 2.8587C17.3431 2.69175 17.0235 2.66321 16.7454 2.7828L14.07 3.93L15.2163 1.2558C15.4128 0.799237 15.202 0.269813 14.7454 0.0733125C14.6332 0.0250125 14.5123 7.50236e-05 14.3901 2.35561e-08H3.6099C3.11284 -0.000112476 2.70983 0.40275 2.70971 0.899813C2.70968 1.0218 2.73446 1.14251 2.7825 1.2546L3.93 3.93L1.2546 2.7825C0.797738 2.58667 0.26865 2.79825 0.0727875 3.25511C0.02475 3.3672 -3.74575e-05 3.48791 4.24856e-08 3.6099V14.3901C3.75425e-05 14.8872 0.40305 15.2901 0.900113 15.29C1.02199 15.29 1.14259 15.2652 1.2546 15.2172L3.93 14.07L2.7837 16.7442C2.5872 17.2008 2.79803 17.7302 3.25459 17.9267C3.36683 17.975 3.48773 17.9999 3.6099 18H14.3901C14.8872 18.0001 15.2902 17.5972 15.2903 17.1002C15.2903 16.9782 15.2655 16.8575 15.2175 16.7454L14.07 14.07L16.7442 15.2163C17.0223 15.3357 17.3419 15.3071 17.5944 15.1401C17.8473 14.9744 17.9998 14.6925 18 14.3901V3.6099C18.0005 3.30735 17.8484 3.0249 17.5956 2.8587ZM3.3339 1.0182C3.29374 0.925538 3.30356 0.818775 3.36 0.735C3.41479 0.650288 3.50903 0.5994 3.6099 0.6H14.3901C14.5558 0.59985 14.6902 0.734062 14.6904 0.899738C14.6904 0.940463 14.6822 0.980775 14.6661 1.0182L13.3023 4.2H4.6977L3.3339 1.0182ZM13.2 4.8V13.2H4.8V4.8H13.2ZM1.02 14.6658C0.868163 14.7321 0.691313 14.6627 0.62505 14.5108C0.608438 14.4728 0.599888 14.4317 0.6 14.3901V3.6099C0.6 3.44423 0.734325 3.3099 0.9 3.3099C0.941288 3.31001 0.982088 3.31849 1.02 3.3348L4.2 4.6977V13.3023L1.02 14.6658ZM14.6661 16.9818C14.7063 17.0745 14.6964 17.1812 14.64 17.265C14.5851 17.3499 14.4906 17.4008 14.3895 17.4H3.6099C3.44423 17.4002 3.30979 17.2659 3.30964 17.1003C3.3096 17.0595 3.31785 17.0192 3.3339 16.9818L4.6977 13.8H13.3023L14.6661 16.9818ZM17.4 14.3901C17.4004 14.5558 17.2664 14.6904 17.1007 14.6909C17.0592 14.691 17.0181 14.6824 16.98 14.6658L13.8 13.3023V4.6977L16.98 3.3342C17.1318 3.26794 17.3087 3.33731 17.375 3.48915C17.3916 3.52725 17.4001 3.56835 17.4 3.6099V14.3901Z"
+                                        />
+                                    <path
+                                        d="M8.99998 12.9C11.1539 12.9 12.9 11.1539 12.9 8.99998C12.8975 6.8471 11.1529 5.10245 8.99998 5.09998C6.84605 5.09998 5.09998 6.84605 5.09998 8.99998C5.09998 11.1539 6.84605 12.9 8.99998 12.9ZM8.99998 5.69998C10.8225 5.69998 12.3 7.17744 12.3 8.99998C12.2978 10.8216 10.8216 12.2978 8.99998 12.3C7.17744 12.3 5.69998 10.8225 5.69998 8.99998C5.69998 7.17744 7.17744 5.69998 8.99998 5.69998Z"
+                                         />
+                                    <path
+                                        d="M6.90005 8.99993C6.90136 7.84069 7.84081 6.90124 9.00005 6.89993C9.16572 6.89993 9.30005 6.7656 9.30005 6.59993C9.30005 6.43425 9.16572 6.29993 9.00005 6.29993C7.50957 6.30158 6.3017 7.50945 6.30005 8.99993C6.30005 9.1656 6.43437 9.29993 6.60005 9.29993C6.76572 9.29993 6.90005 9.1656 6.90005 8.99993Z"
+                                         />
+                                    <path
+                                        d="M8.69995 11.4C8.69995 11.5656 8.83428 11.7 8.99995 11.7C10.4904 11.6983 11.6983 10.4904 11.7 8.99995C11.7 8.83428 11.5656 8.69995 11.4 8.69995C11.2343 8.69995 11.1 8.83428 11.1 8.99995C11.0986 10.1592 10.1592 11.0986 8.99995 11.1C8.83428 11.1 8.69995 11.2343 8.69995 11.4Z"
+                                       />
+                                </svg>
+                                Studio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="creator-replies-page.html"> 
+                                <svg class="mr-2 aside-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.5297 8.99631C14.3947 9.1457 9.29095 9.72938 4.16639 9.89962C8.39806 8.12426 12.9911 7.45373 17.3478 5.998C17.7508 5.85903 17.8377 5.17807 17.3478 5.09469C13.2273 4.35119 9.218 6.06054 5.12529 5.92504C7.65457 4.79938 10.4409 4.31993 13.0154 3.26722C13.4392 3.08656 13.4288 2.38475 12.8973 2.4056C11.2922 2.45771 9.63491 2.83988 8.02979 2.65922C8.99564 2.09639 9.9337 1.48839 10.7502 0.703199C11.0594 0.404411 10.7397 -0.0819888 10.3471 0.0118168C9.5828 0.182057 8.67948 0.331451 8.17918 0.967244C8.02979 1.15833 8.10623 1.39111 8.25214 1.50923C7.71016 1.83929 7.15775 2.15892 6.59491 2.46466C6.25443 2.65574 6.35171 3.14562 6.70262 3.26374C7.58508 3.55211 8.4884 3.60422 9.39171 3.56253C7.31756 4.17748 5.23647 4.75421 3.34298 5.84861C3.03377 6.02927 3.05462 6.60253 3.45069 6.65812C7.2446 7.26264 10.9656 5.84861 14.7317 5.81734C10.3194 7.04029 5.79235 7.82548 1.69618 10.0177C1.27231 10.2401 1.47382 10.9211 1.93937 10.9106C6.53238 10.8794 11.0941 10.4208 15.6767 10.1463C13.9639 10.6258 12.2441 11.0601 10.5209 11.4527C7.04309 12.2517 3.72866 13.3357 0.337731 14.4301C-0.162566 14.5899 -0.0965542 15.4098 0.466279 15.3751C3.22139 15.2153 5.87921 14.5343 8.57873 14.0584C11.4068 13.5581 14.4989 13.228 17.4243 13.1134C15.2146 15.1667 10.4062 14.6351 7.78315 15.3786C7.31412 15.5071 7.31412 16.1881 7.78315 16.3236C8.8567 16.6328 9.90941 16.6745 10.983 16.6537C10.6946 16.7926 10.3993 16.8969 10.0797 17.0046C9.87814 17.0671 9.71833 17.2478 9.71833 17.4736C9.73917 18.1545 9.80171 18.8251 9.8573 19.5026C9.90941 20.1314 10.8892 20.1314 10.837 19.5026C10.7849 18.9084 10.7398 18.3109 10.7085 17.7168C10.7294 18.0156 12.8139 16.6224 12.9946 16.473C13.283 16.2194 13.1127 15.7608 12.7931 15.6635C15.2598 15.3751 17.7057 14.8435 18.8835 12.8562C19.0642 12.5471 18.8314 12.1232 18.4701 12.1336C15.6212 12.1961 12.7618 12.6547 9.92334 12.9327C8.83937 13.0404 7.77624 13.221 6.71311 13.433C7.83878 13.1029 8.97834 12.8041 10.1457 12.5505C13.3664 11.8695 16.5558 10.9975 19.6826 9.96563C20.1585 9.77107 20.0925 8.97546 19.5297 8.99631Z"
+                                         />
+                                </svg>
+                                Replies
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="creator-statistics-page.html">
+                                <svg class="mr-2 aside-svg" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.55496 7.11487H0.714964C0.361489 7.11487 0.0749512 7.40141 0.0749512 7.75488V17.3549C0.0749512 17.7084 0.361489 17.9949 0.714964 17.9949H4.55496C4.90844 17.9949 5.19498 17.7084 5.19498 17.3549V7.75488C5.19494 7.40141 4.9084 7.11487 4.55496 7.11487ZM3.91495 16.7149H1.35494V8.39489H3.91495V16.7149Z"
+                                         />
+                                    <path
+                                        d="M10.955 0.0749512H7.11499C6.76151 0.0749512 6.47498 0.361489 6.47498 0.714964V17.3549C6.47498 17.7084 6.76151 17.995 7.11499 17.995H10.955C11.3085 17.995 11.595 17.7084 11.595 17.3549V0.714964C11.595 0.361489 11.3085 0.0749512 10.955 0.0749512ZM10.315 16.7149H7.755V1.35494H10.315V16.7149Z"
+                                         />
+                                    <path
+                                        d="M17.355 5.19495H13.515C13.1615 5.19495 12.875 5.48148 12.875 5.83496V17.355C12.875 17.7084 13.1615 17.995 13.515 17.995H17.355C17.7085 17.995 17.995 17.7084 17.995 17.355V5.83496C17.995 5.48148 17.7085 5.19495 17.355 5.19495ZM16.715 16.7149H14.155V6.47497H16.715V16.7149Z"
+                                      />
+                                </svg>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="creator-ads-page.html">
+                                <svg class="mr-1 ml-n1 aside-svg" width="26" height="26" viewBox="0 0 26 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.8906 5.27412V0.528021C19.8906 0.0319311 19.2516 -0.198694 18.9418 0.211052C18.9342 0.221177 18.1623 1.23487 16.7836 2.23141C14.9586 3.55054 12.9877 4.21943 10.9258 4.21943H7.16406C5.4194 4.21943 4 5.63883 4 7.38349C4 9.12815 5.4194 10.5476 7.16406 10.5476V16.3483C7.16406 16.6396 7.40017 16.8757 7.69141 16.8757H10.9258C11.217 16.8757 11.4531 16.6396 11.4531 16.3483C11.4417 16.2311 11.5397 15.2258 10.959 13.8851C10.5766 13.0019 10.3984 12.2704 10.3984 11.5829V10.5476H10.9258C12.9877 10.5476 14.9586 11.2164 16.7837 12.5356C18.1624 13.5321 18.9342 14.5458 18.9414 14.5554C19.2465 14.9612 19.8906 14.7409 19.8906 14.239V9.49287C21.0537 9.49287 22 8.5466 22 7.38349C22 6.22038 21.0537 5.27412 19.8906 5.27412ZM8.21875 15.821V10.5476H9.34375V11.5829C9.34375 12.4195 9.54948 13.2842 9.99122 14.3042C10.2105 14.8105 10.342 15.3192 10.3838 15.821H8.21875ZM10.3984 9.49287C10.3984 9.49287 7.42826 9.49287 7.16406 9.49287C6.00095 9.49287 5.05469 8.5466 5.05469 7.38349C5.05469 6.22038 6.00095 5.27412 7.16406 5.27412H10.3984V9.49287ZM18.8359 12.8819C18.4689 12.5269 17.9991 12.1153 17.4323 11.7031C15.5983 10.3693 13.5416 9.61609 11.4531 9.50717V5.25977C13.5416 5.15086 15.5983 4.39767 17.4323 3.06384C17.9991 2.6516 18.4689 2.24006 18.8359 1.88512V12.8819ZM19.8906 8.43818V6.3288C20.4722 6.3288 20.9453 6.80194 20.9453 7.38349C20.9453 7.96504 20.4722 8.43818 19.8906 8.43818Z"
+                                         />
+                                </svg>
+                                Ads
+                            </a>
+                        </li>
+                        <li class="nav-item mt-n1">
+                            <a class="nav-link" href="creator-profile-page.html">
+                                <svg class="mr-2  aside-svg" width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.0908 10.4091C18.8181 10.4091 18.6363 10.5909 18.6363 10.8636V16.7727C18.6363 17.0454 18.4544 17.2272 18.1817 17.2272H1.81806C1.54533 17.2272 1.36353 17.0454 1.36353 16.7727V10.8636C1.36353 10.5909 1.18169 10.4091 0.908999 10.4091C0.636304 10.4091 0.454468 10.5909 0.454468 10.8636V16.7727C0.454468 17.5454 1.04537 18.1363 1.8181 18.1363H18.1817C18.9545 18.1363 19.5454 17.5454 19.5454 16.7727V10.8636C19.5454 10.5909 19.3635 10.4091 19.0908 10.4091Z"
+                                         />
+                                    <path
+                                        d="M18.6364 4.04541H1.36363C0.590898 4.04541 0 4.63631 0 5.40904V8.31814C0 8.95447 0.454531 9.49994 1.04547 9.63631L8.18184 11.2272V12.6817C8.18184 12.9545 8.36367 13.1363 8.63637 13.1363H11.3636C11.6364 13.1363 11.8182 12.9544 11.8182 12.6817V11.2272L18.9545 9.63631C19.5455 9.49994 20 8.95447 20 8.3181V5.409C20 4.63631 19.4091 4.04541 18.6364 4.04541ZM10.9091 12.2272H9.09094V10.409H10.9091V12.2272ZM19.0909 8.3181C19.0909 8.54537 18.9545 8.72721 18.7273 8.77264L11.8182 10.3181V9.95447C11.8182 9.68174 11.6363 9.49994 11.3636 9.49994H8.63637C8.36363 9.49994 8.18184 9.68178 8.18184 9.95447V10.3181L1.27273 8.77268C1.04547 8.72721 0.909102 8.54541 0.909102 8.31814V5.40904C0.909102 5.13631 1.09094 4.95451 1.36363 4.95451H18.6364C18.9091 4.95451 19.0909 5.13635 19.0909 5.40904V8.3181Z"
+                                         />
+                                    <path
+                                        d="M12.2727 0.863647H7.72728C6.95455 0.863647 6.36365 1.45455 6.36365 2.22728V2.68181C6.36365 2.95455 6.54548 3.13634 6.81818 3.13634C7.09087 3.13634 7.27271 2.95451 7.27271 2.68181V2.22728C7.27271 1.95455 7.45455 1.77275 7.72724 1.77275H12.2727C12.5454 1.77275 12.7272 1.95459 12.7272 2.22728V2.68181C12.7272 2.95455 12.9091 3.13634 13.1818 3.13634C13.4545 3.13634 13.6363 2.95451 13.6363 2.68181V2.22728C13.6364 1.45455 13.0455 0.863647 12.2727 0.863647Z"
+                                        />
+                                </svg>
+                                Profile
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</aside>
+
+<div class="settings" class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+    <div class="settings-aside h-100">
+        <div class="settings-aside-head creator-balance-aside-head">
+            Account balance
+            <div class="settings-aside-head-money">
+                <img class="settings-aside-head-money-svg"
+                    src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">
+                100,000
+            </div>
+        </div>
+        <a href="creator-balance-page-1.html">
+            <div class="settings-aside-item ">
+                Deposit money
+                <img class="ml-auto item-arrow" src="images/dist/IconCollectionPigeebak/Icon/arrow.svg" alt="">
+                <img class="ml-auto item-arrow-pink" src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg"
+                    alt="">
+            </div>
+        </a>
+        <a href="creator-balance-page-2.html">
+            <div class="settings-aside-item ">
+                Edit card details
+                <img class="ml-auto item-arrow" src="images/dist/IconCollectionPigeebak/Icon/arrow.svg" alt="">
+                <img class="ml-auto item-arrow-pink" src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg"
+                    alt="">
+            </div>
+        </a>
+        <a href="creator-balance-page-3.html">
+            <div class="settings-aside-item ">
+                Subscription
+                <img class="ml-auto item-arrow" src="images/dist/IconCollectionPigeebak/Icon/arrow.svg" alt="">
+                <img class="ml-auto item-arrow-pink" src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg"
+                    alt="">
+            </div>
+        </a>
+        <a href="creator-balance-page-4.html">
+            <div class="settings-aside-item active">
+                Transaction history
+                <img class="ml-auto item-arrow" src="images/dist/IconCollectionPigeebak/Icon/arrow.svg" alt="">
+                <img class="ml-auto item-arrow-pink" src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg"
+                    alt="">
+            </div>
+        </a>
+        <a href="creator-balance-page-5.html">
+            <div class="settings-aside-item ">
+                Withdraw money
+                <img class="ml-auto item-arrow" src="images/dist/IconCollectionPigeebak/Icon/arrow.svg" alt="">
+                <img class="ml-auto item-arrow-pink" src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg"
+                    alt="">
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="col-7 offset-1 pt-5">
+    <h2 class="creator-balance-content-head-h2">Transaction history</h2>
+    <div class="creator-balance-content-transaction-wrapper">
+        <div class="creator-balance-content-transaction-item">
+           <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+           <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">1000</div>
+           <div class="creator-balance-content-transaction-description">Deposit money</div>
+           <div class="creator-balance-content-transaction-time-wrapper">
+               <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+               <div class="creator-balance-content-transaction-time-time">17:54</div>
+           </div>
+           <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+        </div>
+        <div class="creator-balance-content-transaction-item">
+            <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/minus.svg" alt=""></div>
+            <div class="creator-balance-content-transaction-count t-w"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-white.svg" alt="">8</div>
+            <div class="creator-balance-content-transaction-description">Premium subscription</div>
+            <div class="creator-balance-content-transaction-time-wrapper">
+                <div class="creator-balance-content-transaction-time-date">12.11.2020</div>
+                <div class="creator-balance-content-transaction-time-time">22:30</div>
+            </div>
+            <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+         </div>
+         <div class="creator-balance-content-transaction-item fail">
+            <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+            <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">500</div>
+            <div class="creator-balance-content-transaction-description">Deposit money</div>
+            <div class="creator-balance-content-transaction-time-wrapper">
+                <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+                <div class="creator-balance-content-transaction-time-time">17:54</div>
+            </div>
+            <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/fail.svg" alt=""></div> 
+         </div>
+         <div class="creator-balance-content-transaction-item">
+            <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+            <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">1000</div>
+            <div class="creator-balance-content-transaction-description">Deposit money</div>
+            <div class="creator-balance-content-transaction-time-wrapper">
+                <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+                <div class="creator-balance-content-transaction-time-time">17:54</div>
+            </div>
+            <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+         </div>
+         <div class="creator-balance-content-transaction-item">
+             <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/minus.svg" alt=""></div>
+             <div class="creator-balance-content-transaction-count t-w"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-white.svg" alt="">8</div>
+             <div class="creator-balance-content-transaction-description">Premium subscription</div>
+             <div class="creator-balance-content-transaction-time-wrapper">
+                 <div class="creator-balance-content-transaction-time-date">12.11.2020</div>
+                 <div class="creator-balance-content-transaction-time-time">22:30</div>
+             </div>
+             <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+          </div>
+          <div class="creator-balance-content-transaction-item fail">
+             <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+             <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">500</div>
+             <div class="creator-balance-content-transaction-description">Deposit money</div>
+             <div class="creator-balance-content-transaction-time-wrapper">
+                 <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+                 <div class="creator-balance-content-transaction-time-time">17:54</div>
+             </div>
+             <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/fail.svg" alt=""></div> 
+          </div>
+          <div class="creator-balance-content-transaction-item">
+            <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+            <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">1000</div>
+            <div class="creator-balance-content-transaction-description">Deposit money</div>
+            <div class="creator-balance-content-transaction-time-wrapper">
+                <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+                <div class="creator-balance-content-transaction-time-time">17:54</div>
+            </div>
+            <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+         </div>
+         <div class="creator-balance-content-transaction-item">
+             <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/minus.svg" alt=""></div>
+             <div class="creator-balance-content-transaction-count t-w"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-white.svg" alt="">8</div>
+             <div class="creator-balance-content-transaction-description">Premium subscription</div>
+             <div class="creator-balance-content-transaction-time-wrapper">
+                 <div class="creator-balance-content-transaction-time-date">12.11.2020</div>
+                 <div class="creator-balance-content-transaction-time-time">22:30</div>
+             </div>
+             <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+          </div>
+          <div class="creator-balance-content-transaction-item fail">
+             <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+             <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">500</div>
+             <div class="creator-balance-content-transaction-description">Deposit money</div>
+             <div class="creator-balance-content-transaction-time-wrapper">
+                 <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+                 <div class="creator-balance-content-transaction-time-time">17:54</div>
+             </div>
+             <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/fail.svg" alt=""></div> 
+          </div>
+          <div class="creator-balance-content-transaction-item">
+            <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+            <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">1000</div>
+            <div class="creator-balance-content-transaction-description">Deposit money</div>
+            <div class="creator-balance-content-transaction-time-wrapper">
+                <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+                <div class="creator-balance-content-transaction-time-time">17:54</div>
+            </div>
+            <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+         </div>
+         <div class="creator-balance-content-transaction-item">
+             <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/minus.svg" alt=""></div>
+             <div class="creator-balance-content-transaction-count t-w"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-white.svg" alt="">8</div>
+             <div class="creator-balance-content-transaction-description">Premium subscription</div>
+             <div class="creator-balance-content-transaction-time-wrapper">
+                 <div class="creator-balance-content-transaction-time-date">12.11.2020</div>
+                 <div class="creator-balance-content-transaction-time-time">22:30</div>
+             </div>
+             <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/success.svg" alt=""></div> 
+          </div>
+          <div class="creator-balance-content-transaction-item fail">
+             <div class="creator-balance-content-transaction-flow"><img class="img-fluid" src="images/dist/IconCollectionPigeebak/Icon/plus-light.svg" alt=""></div>
+             <div class="creator-balance-content-transaction-count t-p"><img class="mr-2" width="15" src="images/dist/IconCollectionPigeebak/icon-small-button/pigeebacs-pink.svg" alt="">500</div>
+             <div class="creator-balance-content-transaction-description">Deposit money</div>
+             <div class="creator-balance-content-transaction-time-wrapper">
+                 <div class="creator-balance-content-transaction-time-date">24.10.2020</div>
+                 <div class="creator-balance-content-transaction-time-time">17:54</div>
+             </div>
+             <div class="creator-balance-content-transaction-status"><img src="images/dist/IconCollectionPigeebak/Icon/fail.svg" alt=""></div> 
+          </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+	<script src="js/app.min.js"></script>
+	<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+</body>
+</html>

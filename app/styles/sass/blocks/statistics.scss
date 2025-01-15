@@ -1,0 +1,161 @@
+.statistics {
+    padding-top: 1rem;
+    background-color: $dark-background-4;
+    .tab-content {
+        display: block;
+    }
+
+    &-nav {
+        &-item {
+            flex-grow: 1;
+            &-text {
+                color: $white;
+                @extend %title-of-topics;
+                display: flex;
+                justify-content: center;
+                border-bottom: 1px solid $hr-line-profile;
+                padding: 1rem 0;
+
+                &.active {
+                    width: 100%;
+                    border-bottom: 1px solid $white;
+                }
+            }
+        }
+    }
+
+    &-account {
+        &-song-item {
+            height: 60px;
+            background-color: $dark-background-1;
+            padding: .5rem 1rem;
+            border-bottom: 1px solid $hr-line-profile;
+            display: flex;
+            align-items: center;
+
+            &-img {
+                height: 100%;
+                border-radius: 3px;
+            }
+
+            &-name {
+                @extend %headline-h6;
+                color: $white;
+                margin-left: .5rem;
+            }
+
+            &-time {
+                display: inline-block;
+                @extend %sub-title;
+                color: $grey-text;
+                margin-left: auto;
+            }
+        }
+
+        &-center-line {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .line {
+                width: 1px;
+                background-color: $chatBorderColor;
+                height: 100%;
+            }
+        }
+        &-general {
+            &-wrapper-2,
+            &-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 2rem 0;
+                justify-content: space-between;
+            }
+
+            &-wrapper-2 {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+
+            &-wrapper > &-item {
+                flex: 1 48%;
+            }
+
+            &-item-2,
+            &-item {
+                border: 1px solid $white;
+                padding: 0.5rem;
+                border-radius: 5px;
+                margin-bottom: 0.9rem;
+                &:nth-child(odd) {
+                    margin-right: 0.9rem;
+                }
+                &-title {
+                    @extend %regular-text-1;
+                    color: $white;
+                    margin-bottom: 0.3rem;
+                }
+                &-count {
+                    @extend %big-button;
+                    color: $white;
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            &-item-2 {
+                width: 30%;
+                margin-right: 0;
+                &:nth-child(odd) {
+                    margin-right: 0;
+                }
+            }
+
+            &-user {
+                &-item {
+                    display: flex;
+                    align-items: center;
+
+                    &-info {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid $hr-line-profile;
+                        margin-left: 1rem;
+                        padding: 1rem 0;
+
+                        &-name {
+                            @extend %regular-text-1;
+                            color: $white;
+                            margin: 0;
+                            width: 30%;
+                        }
+
+                        &-info {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        &-item {
+                            margin: 0 0.5rem;
+                            @extend %sub-title;
+                            color: $grey-text;
+                            display: flex;
+                            align-items: flex-end;
+                            height: 20px;
+                        }
+
+                        &-svg {
+                            margin-left: auto;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-series {
+        &-wrapper {
+            border-radius: 0px 0px 10px 10px;
+        }
+    }
+}

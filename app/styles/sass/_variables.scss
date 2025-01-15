@@ -1,0 +1,123 @@
+body[theme="light"] {
+    --dark-background-1: #f9f9f9;
+    --dark-background-3: #fff;
+    --toggleTextOn: #EA0091;
+    --input-background:#eee;
+    --light-grey:#828282;
+    --toggleBG: rgba(234, 0, 145, 0.2);
+    --toggleTextOff: #828282;
+    --dropdown-menu-bg: #262626;
+    --white-to-grey: #828282;
+    --dots-color: #C9CFE5;
+    --white-to-dark-blue: #101F36;
+    --dark-to-d-blueh: #C9CFE5;
+    --dark-background-4:#fff;
+    --white-to-silver: #eee;
+    --pink:#EA0091;
+    --big-button-background:#EEEEEE;
+    --hr-line-profile: #ebeef9;
+    --grey-text:#828282;
+    --chatBorderColor: #C9CFE5;
+    --chatBGColor : #eee;
+    --white-to-w-gray: #f9f9f9;
+    --background:#fff;
+    --dark-background-4-to-d-blue:#101F36;
+    --dark-backround-2-to-white-silver: #eee;
+
+    // custom
+    --white-to-nero: #1e1e1e;
+    --aside-head-border: #EEE;
+    --modal-background: #242526;
+
+}
+
+body[theme="dark"] {
+    // default ib style guide
+    --light-pink:#FF70C8;
+    --dark-background-1: #282828;
+    --dark-backround-2: #121212;
+    --dark-background-3: #1D1D1D;
+    --dark-background-4:#1A1A1A;
+    --grey-text:#828282;
+    --light-grey:#AFAFB1;
+    --Light-blue:#F5F7FF;
+    --medium-blue:#EBEEF9;
+    --dark-blue:#C9CFE5;
+    --dark-blue-Text:#EBEEF9;
+    --big-button-background:#EEEEEE;
+    --dark-background-5:#272727;
+    --freen-3: #6FCF97;
+    --pink:#EA0091;
+
+    // custom
+    --white-to-nero: #fff; // aside text
+    --aside-head-border: #1D1D1D;
+    --modal-background: #242526;
+    
+    --background:#282828;
+    --dark-backround-2-to-white-silver: #121212;
+    --dark-to-d-blueh: #1D1D1D;
+    --dark-background-4-to-d-blue:#1A1A1A;
+    --input-background:#323232;
+    --aside-bachground: #1E1E1E;
+    --toggleTextOff: #828282;
+    --toggleTextOn: #fff;
+    --chatBorderColor: #4c4c4c;
+    --dropdown-menu-bg: #262626;
+    --toggleBG: rgba(255, 255, 255, 0.38);
+    --white-to-grey: #fff;
+    --white-to-dark-blue: #fff;
+    --dots-color: #fff;
+    --white-to-silver: #fff;
+    --hr-line-profile: #434345;
+    --white-to-w-gray: #fff;
+    --chatBGColor : #272727;
+
+}
+// aside size
+$aside-width: 170px;
+$headHeight: 70px;
+
+// custom variables
+$white-to-nero: var(--white-to-nero);
+$aside-head-border: var(--aside-head-border);
+$modal-background: var(--modal-background);
+
+$pink: var(--pink);
+$Light-blue: var(--Light-blue);
+$medium-blue: var(--medium-blue);
+$dark-blue: var(--dark-blue); 
+$dark-blue-Text: var(--dark-blue-Text);
+$grey-text:var(--grey-text);
+$light-pink:var(--light-pink);
+$big-button-background:var(--big-button-background);
+$light-grey:var(--light-grey);
+$background:var(--background);
+$dark-background-1:var(--dark-background-1);
+$dark-backround-2: var(--dark-backround-2);
+$dark-background-3:var(--dark-background-3);
+$dark-background-4:var(--dark-background-4);
+$input-background:var(--input-background);
+$aside-bachground: var(--aside-bachground);
+$toggleTextOff: var(--toggleTextOff);
+$toggleTextOn: var(--toggleTextOn);
+$toggleFontWeightOff: 300;
+$toggleFontWeightOn: 500;
+$chatBorderColor: var(--chatBorderColor);
+$dropdown-menu-bg: var(--dropdown-menu-bg);
+$toggleBG: var(--toggleBG);
+$white-to-grey: var(--white-to-grey); 
+$dots-color: var(--dots-color);
+$white-to-dark-blue: var(--white-to-dark-blue);
+$dark-to-d-blueh: var(--dark-to-d-blueh);
+$white-to-silver: var(--white-to-silver);
+$hr-line-profile: var(--hr-line-profile);
+$white-to-w-gray: var(--white-to-w-gray);
+$chatBGColor: var(--chatBGColor);
+$dark-background-4-to-d-blue: var(--dark-background-4-to-d-blue);
+$dark-backround-2-to-white-silver: var(--dark-backround-2-to-white-silver);
+
+$d-blue: #101F36;
+$bg-blue: #351DEB;
+$bg-pink:#FF70C8;
+$bg-dark: #181818;
