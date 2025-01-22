@@ -32,20 +32,67 @@
             <div class="form-group">
               <label class="login-label" for="input-email">EMAIL OR USERNAME</label>
               <input type="email" class="form-control login-input" name="" id="input-email" value="admin"  placeholder="">
+              <div id="emailValidationFeedback" class="d-none email-invalid-feedback p-2 text-danger">
+                The email address you entered is invalid. Please check and try again.
+              </div>
             </div>
             <div class="form-group">
               <label class="login-label" for="input-password">PASSWORD</label>
               <input type="password" class="form-control login-input" name="" id="input-password" value="adminadminadmin" aria-describedby="passwordhelpId" placeholder="">
+              <div id="passwordValidationFeedback" class="d-none password-invalid-feedback p-2 text-danger">
+                The password you entered is incorrect. Please try again.
+              </div>
               <small id="passwordhelpId" class="form-text text-muted login-help"><a href="forgot-password-page-1.html">forgot password?</a></small>
             </div>
           </form>
-          <a class="btn" href="home-page.html"><button type="submit" class="btn login-submit">Login</button></a>
+          <a class="btn" onclick="validate()" href="#"><button type="submit"  class="btn login-submit">Login</button></a>
           <button class="btn login-register"><a href="register-step-1-page.html">register</a></button>
     </main>
 </div>
     </div>    
 </div>
 
+<script>
+    function validate() {
+        const passwordInput = document.querySelector('#input-password');
+        const emailInput = document.querySelector('#input-email');
+
+        const emailInvalidFeedback = document.querySelector('#emailValidationFeedback');
+        const passwordInvalidFeedback = document.querySelector('#passwordValidationFeedback');
+
+        const password = passwordInput.value;
+        const email = emailInput.value;
+    
+        if (password === '') {
+            passwordInput.classList.remove('is-valid');
+            passwordInput.classList.add('is-invalid');
+            passwordInvalidFeedback.classList.add('d-block');
+            passwordInvalidFeedback.classList.remove('d-none');
+        } else {
+            passwordInput.classList.add('is-valid');
+            passwordInput.classList.remove('is-invalid');
+            passwordInvalidFeedback.classList.add('d-none');
+            passwordInvalidFeedback.classList.remove('d-block');
+        }
+
+        if (email === '') {
+            emailInput.classList.remove('is-valid');
+            emailInput.classList.add('is-invalid');
+            emailInvalidFeedback.classList.add('d-block');
+            emailInvalidFeedback.classList.remove('d-none');
+        } else {
+            emailInput.classList.add('is-valid');
+            emailInput.classList.remove('is-invalid');
+            emailInvalidFeedback.classList.add('d-none');
+            emailInvalidFeedback.classList.remove('d-block');
+        }
+
+        if (emailInput.classList.contains('is-invalid') || passwordInput.classList.contains('is-invalid')) {
+            return
+        }
+        window.location.href = 'home-page.html'
+    }
+</script>
 	<script src="js/app.min.js"></script>
 	<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </body>
