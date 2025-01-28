@@ -1,66 +1,234 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      href="https://vjs.zencdn.net/7.10.2/video-js.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="images/favicon.png">
-	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
-	<link rel="stylesheet" href="css/main.min.css">
-	<link href="https://vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet" />
-</head>
-
-<body id="body" theme="dark">
-
-<div class="container-fluid login-container">
-    <div class="row">
+  <body id="body" theme="dark">
+    <div class="container-fluid login-container">
+      <div class="row">
         <div class="col-12">
-    <header id="login-head">
-        <img class="login-svg" src="images/dist/IconCollectionPigeebak/pigeebak logo.svg" alt="">
-    </header>
-</div>
-    </div>
-    <div class="row"> 
+          <header id="login-head">
+            <img
+              class="login-svg"
+              src="images/dist/IconCollectionPigeebak/pigeebak logo.svg"
+              alt=""
+            />
+          </header>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-4 mx-auto">
-    <main id="login-body">
-        <h3 class="login-hellow mt-5">Registration</h3>
-        <form action="">
-            <div class="form-group">
-                <label class="login-label" for="input-email">phone or e-mail</label>
-                <input type="email" class="form-control login-input" name="" id="input-email"  placeholder="">
+          <main id="login-body">
+            <h3 class="login-hellow mt-5">Registration</h3>
+            <form action="">
+              <div class="form-group">
+                <label class="login-label" for="input-email">e-mail</label>
+                <input
+                  type="text"
+                  class="form-control login-input"
+                  name=""
+                  id="input-email"
+                  oninput="validate('email')"
+                  placeholder=""
+                  required
+                />
+                <div
+                  id="emailValidationFeedback"
+                  class="d-none email-invalid-feedback p-2 text-danger"
+                >
+                  The email address you entered is invalid.
+                </div>
               </div>
               <div class="form-group">
-                <label class="login-label" for="account-name">name your account</label>
-                <input type="text" class="form-control login-input" name="" id="account-name" aria-describedby="helpId" placeholder="">
-              </div>
-            <div class="form-group">
-                <label class="login-label" for="input-password-new">create a password</label>
-                <input type="password" class="form-control login-input" name="" id="input-password-new"
-                    aria-describedby="passwordhelpId" placeholder="">
-                <div class="form-check mt-2">
-                    <input type="checkbox" class="form-check-input" name="" id="input-checkbox" value="checkedValue" checked>
-                    <label for="input-checkbox" class="form-check-label login-checkbox">
-                        Save password
-                    </label>
+                <label class="login-label" for="account-name"
+                  >name your account</label
+                >
+                <input
+                  type="text"
+                  class="form-control login-input"
+                  name=""
+                  id="account-name"
+                  oninput="validate('name')"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <div
+                  id="nameValidationFeedback"
+                  class="d-none name-invalid-feedback p-2 text-warning"
+                >
+                  Your name must be at least 4 characters long.
                 </div>
+              </div>
+              <div class="form-group">
+                <label class="login-label" for="input-password-new"
+                  >create a password</label
+                >
+                <input
+                  type="password"
+                  class="form-control login-input"
+                  name=""
+                  minlength="8"
+                  id="input-password-new"
+                  oninput="validate('password')"
+                  aria-describedby="passwordhelpId"
+                  placeholder=""
+                />
+                <div
+                  id="passwordValidationFeedback"
+                  class="d-none password-invalid-feedback p-2 text-warning"
+                >
+                  Password must be at least 8 characters long.
+                </div>
+                <div class="form-check mt-2">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name=""
+                    id="input-checkbox"
+                    value="checkedValue"
+                    checked
+                  />
+                  <label
+                    for="input-checkbox"
+                    class="form-check-label login-checkbox"
+                  >
+                    Save password
+                  </label>
+                </div>
+              </div>
+            </form>
+            <div class="d-flex justify-content-center">
+              <a href="register-step-1-page.html"
+                ><button type="submit" class="btn login-submit disabled">
+                  <img
+                    class="sound-arrow-pink rotate180"
+                    src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg"
+                    alt=""
+                  />
+                  back
+                </button></a
+              >
+              <a href="register-step-4-page.html"
+                ><button
+                  type="submit"
+                  disabled
+                  id="nextButton"
+                  class="btn login-submit"
+                >
+                  next
+                  <img
+                    class="sound-arrow-pink"
+                    src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg"
+                    alt=""
+                  /></button
+              ></a>
             </div>
-        </form>
-        <div class="d-flex justify-content-center">
-            <a href="register-step-1-page.html"><button type="submit" class="btn login-submit disabled"><img class="sound-arrow-pink rotate180"
-                src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg" alt=""> back</button></a>
-            <a href="register-step-4-page.html"><button type="submit" class="btn login-submit ">next 
-                <img class="sound-arrow-pink"
-                src="images/dist/IconCollectionPigeebak/Icon/arrow-pink.svg" alt=""></button></a>
+          </main>
         </div>
-    </main>
-</div>
-    </div>    
-</div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("input-email")
+        .addEventListener("input", function (event) {
+          const pattern = /^[a-zA-Z0-9@._-]*$/;
+          if (!pattern.test(event.target.value)) {
+            event.target.value = event.target.value.replace(
+              /[^a-zA-Z0-9@._-]/g,
+              ""
+            );
+          }
+        });
 
-	<script src="js/app.min.js"></script>
-	<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
-</body>
+      function validate(inputName) {
+        const passwordInput = document.querySelector("#input-password-new");
+        const emailInput = document.querySelector("#input-email");
+        const nextButton = document.querySelector("#nextButton");
+        const nameInput = document.querySelector("#account-name");
+
+        const emailInvalidFeedback = document.querySelector(
+          "#emailValidationFeedback"
+        );
+        const passwordInvalidFeedback = document.querySelector(
+          "#passwordValidationFeedback"
+        );
+        const nameInvalidFeedback = document.querySelector(
+          "#nameValidationFeedback"
+        );
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        const password = passwordInput.value;
+        const email = emailInput.value;
+        const name = nameInput.value;
+
+        if (inputName === "password") {
+          if (password === "" || password.length < 8) {
+            passwordInput.classList.remove("is-valid");
+            passwordInput.classList.add("is-invalid");
+            passwordInvalidFeedback.classList.add("d-block");
+            passwordInvalidFeedback.classList.remove("d-none");
+          } else {
+            passwordInput.classList.add("is-valid");
+            passwordInput.classList.remove("is-invalid");
+            passwordInvalidFeedback.classList.add("d-none");
+            passwordInvalidFeedback.classList.remove("d-block");
+          }
+        }
+
+        if (inputName === "name") {
+          if (name === "" || name.length < 4) {
+            nameInput.classList.remove("is-valid");
+            nameInput.classList.add("is-invalid");
+            nameInvalidFeedback.classList.add("d-block");
+            nameInvalidFeedback.classList.remove("d-none");
+          } else {
+            nameInput.classList.add("is-valid");
+            nameInput.classList.remove("is-invalid");
+            nameInvalidFeedback.classList.add("d-none");
+            nameInvalidFeedback.classList.remove("d-block");
+          }
+        }
+
+        if (inputName === "email") {
+          if (email === "" || !emailPattern.test(email)) {
+            emailInput.classList.remove("is-valid");
+            emailInput.classList.add("is-invalid");
+            emailInvalidFeedback.classList.add("d-block");
+            emailInvalidFeedback.classList.remove("d-none");
+          } else {
+            emailInput.classList.add("is-valid");
+            emailInput.classList.remove("is-invalid");
+            emailInvalidFeedback.classList.add("d-none");
+            emailInvalidFeedback.classList.remove("d-block");
+          }
+        }
+
+        if (
+          emailInput.classList.contains("is-invalid") ||
+          passwordInput.classList.contains("is-invalid") ||
+          nameInput.classList.contains("is-invalid")
+        ) {
+          nextButton.disabled = true;
+        } else {
+          nextButton.disabled = false;
+        }
+      }
+    </script>
+    <script src="js/app.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+  </body>
 </html>
