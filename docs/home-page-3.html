@@ -495,7 +495,7 @@
         <div class="row">
             <div class="col-12 full-page-movie p-0">
                 <!-- img -->
-                <img src="images/dist/home-page/main-movie.png" alt="">
+                <img id="poster" src="images/dist/home-page/main-movie.png" alt="">
                 <!-- play btn -->
                 <img src="images/dist/home-page-main-movie-play-btn.svg" class="play-btn" alt="">
                 <!-- volume btn -->
@@ -712,7 +712,13 @@
 <footer>
 
 </footer>
-
+    <script>
+        const poster = localStorage.getItem('filmPoster');
+        const player = document.getElementById('poster');
+        if (poster) {
+            player.setAttribute('src', poster);
+        }
+    </script>
 	<script src="js/app.min.js"></script>
 	<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </body>

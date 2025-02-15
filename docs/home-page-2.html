@@ -601,7 +601,13 @@
 <footer>
 
 </footer>
-
+    <script>
+        const poster = localStorage.getItem('filmPoster');
+        const player = document.getElementById('video-player-1');
+        if (poster) {
+            player.setAttribute('poster', poster);
+        }
+    </script>
 	<script src="js/app.min.js"></script>
 	<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </body>
